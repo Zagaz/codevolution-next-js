@@ -1,21 +1,20 @@
 import React from 'react';
 
-export default async function ProductDetails({ params }: { params: Promise<{productId: string , reviewId: string }> }) {
-  const { productId ,reviewId } = await params;
+export default async function ProductDetails({ params }: { params: Promise<{ productId: string, reviewId: string }> }) {
+  const { productId, reviewId } = await params;
 
   return (
     <>
-      {reviewId && 
-      <div>
-       <h1>Product Id: {productId} </h1>
-       <h1>  Review Id: {reviewId}</h1>
-       </div>
-
+      {reviewId &&
+        <div>
+          <h1>Product Id: {productId} </h1>
+          <h1>  Review Id: {reviewId}</h1>
+        </div>
       }
-      </>
-      
-      
+    </>
 
-    )
+
+
+  )
 
 }
