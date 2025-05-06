@@ -15,9 +15,11 @@ export default function RootLayout({
         <header>
           <h3>Header</h3>
         </header>
+        <hr />
         {/* That's where the magic happens */}
         {children}
         
+        <hr />
         <footer>
           Footer
         </footer>
