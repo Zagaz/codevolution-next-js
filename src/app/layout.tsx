@@ -12,10 +12,11 @@ export default function RootLayout({
     <html lang="en">
       <body>
         
-        <header>
+        <header >
           <h3>Header</h3>
         </header>
         <hr />
+        
         {/* That's where the magic happens */}
         {children}
         
