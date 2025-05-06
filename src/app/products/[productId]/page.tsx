@@ -5,8 +5,9 @@ export default async function ProducDetails({params} : { params: { productId: st
 
   return (
     <>
-      {productId &&
-        <h1>Product Id: {productId}</h1>
+      {productId ?
+        <h1>Product Id: {productId}</h1> :
+        <h1>No product with respected id</h1>
       }
     </>
   )
