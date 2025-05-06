@@ -11,10 +11,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <h3>Header</h3>
+        
+        <header>
+          <h3>Header</h3>
+        </header>
+        {/* That's where the magic happens */}
         {children}
-        <h3>Footer</h3>
-        </body>
+        
+        <footer>
+          Footer
+        </footer>
+
+      </body>
     </html>
   )
 }
