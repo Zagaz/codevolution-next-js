@@ -6,10 +6,10 @@ export default async function ProductDetails({ params }: { params: Promise<{ pro
   return (
     <>
       {reviewId &&
-        <div>
+        <>
           <h1>Product Id: {productId} </h1>
-          <h1>  Review Id: {reviewId}</h1>
-        </div>
+          <h1> Review Id: {reviewId}</h1>
+        </>
       }
     </>
 
