@@ -1,14 +1,11 @@
-import React from 'react'
+import React from 'react';
 
-export default function ProductReview({params}:{params:{reviewId:string}}) {
-    const reviewId  = params.reviewId;
-  
+export default async function ProductDetails({ params }: { params: Promise<{ reviewId: string }> }) {
+  const { reviewId } = await params;
+
   return (
     <>
-    {
-      reviewId ? <h2>Review Id:{reviewId}</h2>:
-      <h2>No review with respected id</h2>
-    }
+      {reviewId && <h1>Review Id: {reviewId}</h1>}
     </>
-  )
+  );
 }
