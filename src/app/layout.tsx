@@ -13,7 +13,7 @@ export default function RootLayout({
       <body>
         
         <header >
-          <h3>Header</h3>
+          <h3>Main Header</h3>
         </header>
         <hr />
         
@@ -22,7 +22,7 @@ export default function RootLayout({
         
         <hr />
         <footer>
-          Footer
+          <h3>Main Footer</h3>
         </footer>
 
       </body>
