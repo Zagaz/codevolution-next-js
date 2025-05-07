@@ -1,9 +1,10 @@
 import React from 'react'
 
+
 export default function home() {
   return (
     <>
-    <div>Home</div>
+    <div className='bg-red-50'>Home</div>
     </>
   )
 }
