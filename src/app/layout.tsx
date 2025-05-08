@@ -1,4 +1,7 @@
 import './globals.css'
+import Header from './components/header'
+import Footer from './components/footer'
+
 
 export const metadata = {
   title: 'Next.js',
@@ -13,22 +16,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="font-sans bg-gray-50 text-gray-900">
-        
-        <header className="bg-blue-300 p-4 shadow-md">
-          <h3 className="text-2xl font-semibold text-gray-700">Main Header</h3>
-        </header>
-        
-       
-        
-        {/* That's where the magic happens */}
+        <Header />
         {children}
-        
-       
-        
-        <footer className="bg-blue-800  p-4 mt-8 shadow-md">
-          <h3 className="text-2xl   text-white ">Main Footer</h3>
-        </footer>
-
+        <Footer />
       </body>
     </html>
   )

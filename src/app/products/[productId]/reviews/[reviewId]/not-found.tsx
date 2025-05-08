@@ -9,9 +9,9 @@ export default function NotFound() {
   console.log(pathname)
   return (
     <>
+    <div className='px-4 py-2'>
     <h1>404</h1>
-    <div>Product: {productId}</div>
-    <div>Review {reviewId}</div>
+    </div>
     </>
 
   )
