@@ -1,30 +1,36 @@
 import React from 'react';
 import { Metadata } from 'next';
 
-type Props = {
-  params: { productId: string }
-}
-
 // Async function to generate metadata based on route params
-export const generateMetadata = async ({ params }: Props): Promise<Metadata> => {
-  const id = params.productId;
+export const generateMetadata = async ({
+  params,
+}: {
+  params: Promise<{ productId: string }>;
+}): Promise<Metadata> => {
+  const resolvedParams = await params;
+  const id = resolvedParams.productId;
 
-  const title  = await new Promise ((resolve)=>{
-    setTimeout(()=>{
-      resolve(`-- Product Id: ${id}`)
+  const title = await new Promise<string>((resolve) => {
+    setTimeout(() => {
+      resolve(`-- Product Id: ${id}`);
+    }, 100);
+  });
 
-      ,100})
-  } )
+  // dynamic metadata
+
+  
 
   return {
-    title: `${title}`,
-   
+    title,
   };
 };
 
- 
-
-export default async function ProductDetails({ params }: { params: Promise<{ productId: string }> }) {
+// Product page component
+export default async function ProductDetails({
+  params,
+}: {
+  params: Promise<{ productId: string }>;
+}) {
   const { productId } = await params;
 
   return (
