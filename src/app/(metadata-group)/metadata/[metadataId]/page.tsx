@@ -19,7 +19,6 @@ export const generateMetadata = async ({ params }: Props):
         title: `Metadata #${metadataId}`,
         description: `Description Metadata #${metadataId}`
     }
-
 }
 
 //3. params : props
@@ -35,7 +34,7 @@ export default async function MetadataId({ params }: Props) {
         return data
     }
 
-    let user = await fetchUsers()
+    const user = await fetchUsers()
 
     if (parseInt(metadataId) > 10) { notFound() };
 
@@ -43,16 +42,13 @@ export default async function MetadataId({ params }: Props) {
         <>
             <div className="main py-4 px-4">
                 <div className="title">
-
                     <div>
                         <h3 className="text-1xl px-4 font-bold">
                             Metadata Id: <span className="font-light">#{metadataId}</span>
                         </h3>
                     </div>
                 </div>
-
                 <div className="all px-8 py-4">
-
                     <div>
                         <h3 className="text-1xl font-bold">
                             Name: <span className="font-normal">{user.name}</span>
@@ -63,13 +59,11 @@ export default async function MetadataId({ params }: Props) {
                             Username: <span className="font-normal">{user.username}</span>
                         </h3>
                     </div>
-
                     <div>
                         <h3 className="text-1xl font-bold">
                             Email: <span className="font-normal">{user.email}</span>
                         </h3>
                     </div>
-
                     <div>
                         <h3 className="text-1xl font-bold">
                             Phone: <span className="font-normal">{user.phone}</span>
