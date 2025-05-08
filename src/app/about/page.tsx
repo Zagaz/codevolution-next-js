@@ -9,7 +9,8 @@ export const metadata = {
 export default function About() {
   return (
     <>
-    <h1>About</h1>
+    <div className='px-4 py-2'>About</div>
+   
     </>
   )
 }

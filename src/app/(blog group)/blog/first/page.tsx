@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function First() {
   return (
-    <div>First</div>
+    <div className='px-4 py-2'>First</div>
   )
 }
