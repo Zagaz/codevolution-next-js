@@ -1,9 +1,13 @@
 import React from 'react'
 
-export default function ProuctId() {
+export default async function productId({
+    params,
+}:{
+    params:Promise<{productId:string}>
+}) {
+    const productId = (await params).productId
+
   return (
-    <>
-   <div className='px-4 py-2'>Product id: </div>
-    </>
+    <div>productId:{productId}</div>
   )
 }
