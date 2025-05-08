@@ -1,8 +1,10 @@
 import React from 'react'
 import { notFound } from 'next/navigation';
 
+
 // 0. import Metadata
 import { Metadata } from 'next'
+
 
 
 // Dynamic Metadata
