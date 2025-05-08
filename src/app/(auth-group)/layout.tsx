@@ -1,13 +1,11 @@
 import React from 'react'
 
-export default function Auth({ children }: { children: React.ReactNode }) {
-    return (
-        <>
-            <h4>Auth header</h4>
-            
-            {children}
-        
-            <h4>Auth Footer</h4>
-        </>
-    )
+export default function MarketingLayout({ children } :{children: React.ReactNode}) {
+  return (
+    <>
+    <h2 className='bg-pink-100 px-4 py-2'>Marketing Header</h2>
+    {children}
+    <h2 className='bg-pink-100 px-4 py-2'>Marketing Footer</h2>
+    </>
+  )
 }
