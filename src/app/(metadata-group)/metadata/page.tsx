@@ -1,11 +1,12 @@
 import React from 'react'
+import { Metadata } from 'next'
 
-export default function Metadata() {
+export const metadata : Metadata ={
+  title:"Blog"
+}
+
+export default function MetadataPage() {
   return (
-    <>
-    <div className='py-4 px-4'>
-    <div>Metadata</div>
-    </div>
-    </>
+    <div>MetadataPage</div>
   )
 }

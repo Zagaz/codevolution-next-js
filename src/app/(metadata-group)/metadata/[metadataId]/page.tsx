@@ -7,6 +7,7 @@ import { Metadata } from 'next'
 
 
 
+
 // Dynamic Metadata
 //1. Declare type
 type Props = {
