@@ -16,7 +16,7 @@ export default async function ProductDetails({
         <>
           <div className='px-4 py-2'>
             <h1>Product Id: {productId} </h1>
-            <h1> Review Id: {reviewId}</h1>
+            <h1>Review Id: {reviewId}</h1>
           </div>
         </>
       }
