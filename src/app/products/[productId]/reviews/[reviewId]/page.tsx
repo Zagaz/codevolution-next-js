@@ -17,9 +17,5 @@ export default async function ProductDetails({ params }: { params: Promise<{ pro
         </>
       }
     </>
-
-
-
   )
-
 }
