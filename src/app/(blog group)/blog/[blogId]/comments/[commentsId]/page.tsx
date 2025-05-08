@@ -10,8 +10,10 @@ export default async function CommentsId({
 
     return (
         <>
-            <div>Comments Id{blogId}</div>
-            <div>Comments Id{commentsId}</div>
+            <div  className='py-2 px-4'>
+                <div>Comments Id{blogId}</div>
+                <div>Comments Id{commentsId}</div>
+            </div>
         </>
     )
 }
