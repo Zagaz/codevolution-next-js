@@ -1,4 +1,6 @@
 import React from 'react'
+import { notFound } from 'next/navigation';
+
 // 0. import Metadata
 import {Metadata} from 'next'
 
@@ -20,11 +22,13 @@ export const generateMetadata = async ( {params }: Props):
 
 }
 
-
 //3. params : props
 export default async function MetadataId({params }: Props) {
 
-const metadataId = (await params).metadataId
+// Constrain to 10
+    const metadataId = (await params).metadataId
+
+if (parseInt(metadataId) > 10) { notFound() };
 
   return (
     <>
