@@ -17,9 +17,21 @@ type Props = {
 export const generateMetadata = async ({ params }: Props):
     Promise<Metadata> => {
     const metadataId = (await params).metadataId
+     let apiURL = 'https://jsonplaceholder.typicode.com/users/'
+
+     async function fetchUsers() {
+        let res = await fetch(apiURL + metadataId)
+        let data = await res.json()
+        return (data)
+    }
+
+    const  user = await fetchUsers()
+
+    console.warn(user)
+
     return {
-        title: `Metadata #${metadataId}`,
-        description: `Description Metadata #${metadataId}`
+        title: `Metadata #${user.name}`,
+        description: `Description Metadata #${user.name}`
     }
 }
 
