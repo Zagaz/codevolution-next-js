@@ -117,21 +117,7 @@ export default async function MetadataId({ params }: Props) {
                             City: <span className="font-normal">{user.address.city}</span>
                         </h3>
                     </div>
-
-
-
-
-
-
-
-
-
-
-
                 </div>
-
-
-
             </div>
         </>
     );
