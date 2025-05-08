@@ -37,8 +37,6 @@ export default async function MetadataId({ params }: Props) {
 
     let user = await fetchUsers()
 
-    console.error(user)
-
     if (parseInt(metadataId) > 10) { notFound() };
 
     return (
