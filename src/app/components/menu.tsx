@@ -18,9 +18,8 @@ export default function Menu() {
     <ul className="main-menu flex flex-wrap gap-x-6 items-center">
       {navLinks.map((link, index) => {
         
-        const isActive = pathname === link.href ||
-        pathname.startsWith(link.href) &&
-        pathname !== ""
+   const isActive =
+  link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
 
         return (
           <li key={index}>
