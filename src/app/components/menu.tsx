@@ -25,8 +25,8 @@ export default function Menu() {
           <li key={index}>
             <Link
               href={link.href}
-              className={`p-1 transition-all hover:bg-white hover:rounded-[5px] ${
-                isActive ? 'font-bold  text-white bg-indigo-500 rounded-sm' : ''
+              className={`p-1 transition-all text-indigo-800 hover:bg-white  rounded-[5px] ${
+                isActive ? 'font-bold  text-white bg-white rounded-sm' : ''
               }`}
             >
               {link.name}
