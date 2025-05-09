@@ -1,5 +1,5 @@
 import React from 'react';
-import { notFound } from 'next/navigation';
+import { notFound,redirect } from 'next/navigation';
 
 export default async function ProductDetails({
   params,
@@ -8,7 +8,9 @@ export default async function ProductDetails({
 }) {
   const { productId, reviewId } = await params;
 
-  if (parseInt(reviewId) > 1000) { notFound() };
+  if (parseInt(reviewId) > 1000) { 
+    redirect('/products');
+  };
 
   return (
     <>
