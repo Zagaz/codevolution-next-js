@@ -16,11 +16,11 @@ export default function home() {
     <div className='px-6'>
     <div className='py-2 px-4'>Home</div>
     <div className='py-2 px-4'>Articles</div>
-    <Link href= '/blog'>Blog</Link><br />
     <Link href='/products'>Products</Link><br />
-    <Link href='/articles/breaking-news-123?lang=en'>Read English</Link><br />
-    <Link href='/articles/breaking-news-123?lang=fr'>Read freanch</Link><br />
-    
+    <Link href= '/blog'>Blog</Link><br />
+    <Link href='/articles/breaking-news-123?lang=en'>Read English 🇺🇸</Link><br />
+    <Link href='/articles/breaking-news-123?lang=fr'>Read freanch 🇫🇷</Link><br />
+
 
 
 

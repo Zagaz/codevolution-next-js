@@ -8,7 +8,9 @@ export default function Menu() {
     { name: "Home", href: "/" },
     { name: "Blog", href: "/blog" },
     { name: "Metadata", href: "/metadata" },
-    { name: "Products", href: "/products" }
+    { name: "Products", href: "/products" },
+    { name: "Articles", href: "/articles/breaking-news-123" },
+
   ];
 
   // Correctly call usePathname()
