@@ -1,7 +1,5 @@
 import React from 'react'
 import Link from 'next/link'
-import { Greet } from './components/greets'
-import { Person } from './components/person'
 
 
 
@@ -16,13 +14,22 @@ export default function home() {
   return (
     <>
     <div className='px-6'>
-    <div className='bg-red-200 py-2 px-4'>Home</div>
+    <div className='py-2 px-4'>Home</div>
+    <div className='py-2 px-4'>Articles</div>
+    <Link href= '/blog'>Blog</Link><br />
+    <Link href='/products'>Products</Link><br />
+    <Link href='/articles/breaking-news-123?lang=en'>Read English</Link><br />
+    <Link href='/articles/breaking-news-123?lang=fr'>Read freanch</Link><br />
     
-    <Greet name="John" messageCount={10} isLoggedIn={true}/>
-    <Person name={personName}/>
 
-    <div className='links px-10'>
-    </div>
+
+
+
+
+
+
+
+   
 
     </div>
     </>
