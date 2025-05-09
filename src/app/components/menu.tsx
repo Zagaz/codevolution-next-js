@@ -15,7 +15,7 @@ export default function Menu() {
   const pathname = usePathname();
 
   return (
-    <ul className="main-menu flex flex-wrap gap-x-6 items-center">
+    <ul className="main-menu flex flex-wrap gap-x-6 items-center"> 
       {navLinks.map((link, index) => {
         
    const isActive =
